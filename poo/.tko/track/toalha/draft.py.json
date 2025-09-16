@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-16_19-39-25",
+            "content": "@@ -1,190 +1,95 @@\n-class Towel:%0A    def __init__(self):%0A        self.color = %22red%22%0A        self.size = %22p%22%0A        self.wetness = 0%0A%0Atowel = Towel()%0Aprint (towel.color)%0Aprint (towel.size)%0Aprint (towel.wetness)\n+@@ -4,10 +4,56 @@%0A nt(%2522%0A-lala%0A+Minha toalha %25C3%25A9 verde, mas pode ser branca ou rosa.%0A %2522)%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-09-16_20-09-44",
+            "content": "@@ -147,50 +147,8 @@\n or)%0A\n-towel.color = %22white%22%0Aprint (towel.color)%0A\n prin\n",
+            "lines": "10"
+        },
+        {
+            "label": "2025-09-16_20-10-52",
+            "content": "@@ -31,31 +31,8 @@\n self\n-, color: str, size: str\n ):%0A \n@@ -51,21 +51,21 @@\n color = \n-color\n+%22red%22\n %0A       \n@@ -77,20 +77,19 @@\n .size = \n-size\n+%22p%22\n %0A       \n@@ -125,22 +125,9 @@\n wel(\n-%22green%22, %22G%22)%0A\n+)\n %0Apri\n",
+            "lines": "12"
+        },
+        {
+            "label": "2025-09-16_20-14-27",
+            "content": "@@ -162,35 +162,8 @@\n %22G%22)\n-%0Atoalha = Towel(%22red%22, %22P%22)\n %0A%0Apr\n",
+            "lines": "13"
+        },
+        {
+            "label": "2025-09-16_20-16-45",
+            "content": "@@ -162,167 +162,35 @@\n %22G%22)\n- # a vari%C3%A1vel towel referencia Towel, que %C3%A9 um objeto%0Atoalha = Towel(%22red%22, %22P%22)%0Aoutra = toalha%0Amais_outra = toalha%0A%0Atoalha.color = %22blue%22%0Aoutra.color = %22blue%22\n+%0Atoalha = Towel(%22red%22, %22P%22)\n %0A%0Apr\n",
+            "lines": "14"
+        },
+        {
+            "label": "2025-09-16_20-19-11",
+            "content": "@@ -133,106 +133,8 @@\n  = 0\n-%0A    def __str__ (self):%0A        return f%22color:%7Bself.color%7D, tam:%7Bself.size%7D, umi:%7Bself.wetness%7D%22\n %0A%0Ato\n@@ -165,9 +165,9 @@\n ) # \n-A\n+a\n  var\n@@ -239,16 +239,94 @@\n %22, %22P%22)%0A\n+outra = toalha%0Amais_outra = toalha%0A%0Atoalha.color = %22blue%22%0Aoutra.color = %22blue%22\n %0A%0Aprint \n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-09-16_20-21-30",
+            "content": "@@ -338,16 +338,17 @@\n , %22P%22)%0A%0A\n+%0A\n print (t\n@@ -445,18 +445,4 @@\n ess)\n-%0A%0Aprint(towel)\n",
+            "lines": "17"
+        },
+        {
+            "label": "2025-09-16_20-23-48",
+            "content": "class Towel:\n    def __init__(self, color: str, size: str):\n        self.color = color\n        self.size = size\n        self.wetness = 0\n    def __str__ (self):\n        return f\"color:{self.color}, tam:{self.size}, umi:{self.wetness}\"\n\ntowel = Towel(\"green\", \"G\") # A vari\u00e1vel towel referencia Towel, que \u00e9 um objeto\ntoalha = Towel(\"red\", \"P\")\n\nprint (towel.color)\ntowel.color = \"white\"\nprint (towel.color)\nprint (towel.size)\nprint (towel.wetness)\n\nprint(towel)",
+            "lines": "18"
+        }
+    ]
+}
