@@ -1,18 +1,58 @@
-class Towel:
-    def __init__(self, color: str, size: str):
-        self.color = color
+class Towel: 
+    def __init__ (self, color: str, size: str): #construtor
+        self.color = color  
         self.size = size
         self.wetness = 0
-    def __str__ (self):
-        return f"color: {self.color}, tam: {self.size}, umi: {self.wetness}"
 
-towel = Towel("green", "G") # A variável towel referencia Towel, que é um objeto
-toalha = Towel("red", "P")
+    def getMaxWetness (self) -> int:
+        if self.size == "P":
+            return 10
+        if self.size == "M":
+            return 20
+        if self.size == "G":
+            return 30
+        return 0
 
-print (towel.color)
-towel.color = "white"
-print (towel.color)
-print (towel.size)
-print (towel.wetness)
+    def dry (self, amount: int) -> None:
+        self.wetness += amount
+        if self.wetness >= self.getMaxWetness():
+            print("toalha encharcada")
+            self.wetness = self.getMaxWetness()
+        
+    def __str__ (self): #toString
+        return f"Cor: {self.color}, Tamanho: {self.size}, Umidade: {self.wetness}"
+    
+    def isDry (self) -> bool:
+        return self.wetness == 0
+    
+    def wringOut (self) -> None:
+        self.wetness = 0
 
-print(towel)
+def main (): 
+    toalha: Towel = Towel ("", "") 
+    while True:
+        line: str = input() #5. entrada de linha
+        args: list[str] = line.split(" ") #6. lista de palavras 
+        print("$" + line)
+        if args[0] == "end":
+            break
+        elif args[0] == "criar":
+            color = args[1]
+            size = args[2]
+            toalha = Towel(color, size)
+        elif args[0] == "mostrar":
+            print(toalha)
+        elif args[0] == "enxugar":
+            amount: int = int(args[1])
+            toalha.dry(amount)
+        elif args[0] == "seca":
+            if toalha.isDry():
+                print ("sim")
+            else:
+                print("nao")
+        elif args[0] == "torcer":
+            toalha.wringOut()
+        else:
+            print ("fail: comando inválido")
+
+main() 
