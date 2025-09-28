@@ -4,7 +4,8 @@ database: database
 expanded:
 - campanha-principal
 - bloco_b-primeiras-classes
-tasks: {}
+tasks:
+  animal: '{rate:100, human:SIM, iagen:SIM, alone:6, study:240}'
 flags:
   quests: 0
   tracks: 0
@@ -12,5 +13,5 @@ flags:
   graph: 0
   xray: 0
 lang: py
-index: animal
+index: enxugar
 filter: []
