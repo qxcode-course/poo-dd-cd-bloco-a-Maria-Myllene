@@ -3,6 +3,7 @@ class Calculadora:
         self.display: float = 0.00
         self.battery: int = 0
         self.batteryMax: int = batteryMax
+
     def __str__ (self):
         return f"display = {self.display:.2f}, battery = {self.battery}"
     
@@ -10,15 +11,29 @@ class Calculadora:
         self.battery += amount
         if self.battery >= self.batteryMax:
             self.battery = self.batteryMax
-    def sum (self, number1: int, number2):
-        numero1: int = 0
-        numero2: int = 0
+
+    def sum (self, number1: float, number2: float):
+        numero1: float = 0.00
+        numero2: float = 0.00
         if self.battery > 0:
             self.display = number1 + number2
+            self.battery -= 1
+        else:
+            print("fail: bateria insuficiente")
+
+    def div (self, number3: float, number4: float):
+        numero3: float = 0.00
+        numero4: float = 0.00
+        if self.battery > 0:
+            if number3 == 0 or number4 == 0:
+                print("fail: divisao por zero")
+                self.battery -= 1
+            else:
+                self.display = number3 / number4
+                self.battery -= 1
         else:
             print("fail: bateria insuficiente")
         
-
 
 def main():
     while True:
@@ -30,15 +45,19 @@ def main():
         elif args[0] == "init":
             batteryMax = int(args[1])
             calculadora: Calculadora = Calculadora(batteryMax)
-        elif args [0] == "show":
+        elif args [0] == "show":   
             print (calculadora)
         elif args [0] == "charge":
             amount: int = int(args[1])
             calculadora.charge(amount)
         elif args[0] == "sum":
-            amount: int = int(args[1])
-            calculadora.charge(amount)
-            calculadora.sum()
+            number1: float = float(args[1])
+            number2: float = float(args[2])
+            calculadora.sum(number1, number2)
+        elif args[0] == "div":
+            number3: float = float(args[1])
+            number4: float = float(args[2])
+            calculadora.div(number3, number4)
         else:
             print("fail: comando invalido")
 
