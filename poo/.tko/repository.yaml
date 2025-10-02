@@ -7,6 +7,7 @@ expanded:
 tasks:
   toalha: '{rate:100, human:SIM, alone:5, study:160}'
   animal: '{rate:100, human:SIM, iagen:SIM, alone:6, study:240}'
+  calculadora: '{rate:100}'
   enxugar: '{rate:100}'
 flags:
   quests: 0
@@ -15,5 +16,5 @@ flags:
   graph: 0
   xray: 0
 lang: py
-index: calculadora
+index: carro
 filter: []

@@ -12,6 +12,7 @@ class Animal:
         if self.age >= 4:
             print(f"warning: {self.species} morreu")
             self.age = 4
+    
     def noise (self):
         if self.age == 0:
             print("---")
