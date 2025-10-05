@@ -1,0 +1,21 @@
+2025-10-05 01:10:13, SELF, v:1, k:calculadora, rate:100, human:sim, iagen:sim, alone:7, study:220
+2025-10-05 01:10:15, MOVE, v:1, k:enxugar, mode:PICK
+2025-10-05 01:10:17, MOVE, v:1, k:enxugar, mode:BACK
+2025-10-05 01:10:53, SELF, v:1, k:enxugar, rate:100, human:sim, alone:10, study:60
+2025-10-05 01:19:49, MOVE, v:1, k:carro, mode:PICK
+2025-10-05 01:19:51, EXEC, v:1, k:carro, mode:FULL, rate:0, size:66
+2025-10-05 01:23:26, MOVE, v:1, k:carro, mode:BACK
+2025-10-05 01:24:15, MOVE, v:1, k:carro, mode:PICK
+2025-10-05 01:24:19, EXEC, v:1, k:carro, mode:FULL, rate:0, size:66
+2025-10-05 01:24:45, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-10-05 01:25:09, MOVE, v:1, k:carro, mode:BACK
+2025-10-05 01:25:45, MOVE, v:1, k:carro, mode:PICK
+2025-10-05 01:25:47, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-10-05 01:28:33, MOVE, v:1, k:carro, mode:PICK
+2025-10-05 01:28:38, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-10-05 01:28:51, MOVE, v:1, k:carro, mode:BACK
+2025-10-05 01:30:59, MOVE, v:1, k:carro, mode:PICK
+2025-10-05 01:31:02, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-10-05 01:31:22, EXEC, v:1, k:carro, mode:FREE
+2025-10-05 01:32:34, MOVE, v:1, k:carro, mode:BACK
+2025-10-05 01:33:08, SELF, v:1, k:carro, human:sim, other:sim, alone:4, study:200

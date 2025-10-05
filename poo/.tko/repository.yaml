@@ -7,9 +7,9 @@ expanded:
 tasks:
   toalha: '{rate:100, human:SIM, alone:5, study:160}'
   animal: '{rate:100, human:SIM, iagen:SIM, alone:6, study:240}'
-  carro: '{rate:100}'
-  calculadora: '{rate:100}'
-  enxugar: '{rate:100}'
+  carro: '{human:sim, other:sim, alone:4, study:200}'
+  calculadora: '{rate:100, human:sim, iagen:sim, alone:7, study:220}'
+  enxugar: '{rate:100, human:sim, alone:10, study:60}'
 flags:
   quests: 0
   tracks: 0
@@ -17,5 +17,5 @@ flags:
   graph: 1
   xray: 0
 lang: py
-index: calculadora
+index: configuracao-e-aquecimento
 filter: []

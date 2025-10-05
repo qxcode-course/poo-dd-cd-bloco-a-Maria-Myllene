@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2025-10-02 22:42:37, MOVE, v:1, k:carro, mode:PICK
 2025-10-02 22:43:19, EXEC, v:1, k:carro, mode:FULL, rate:60, size:63
 2025-10-02 22:43:42, EXEC, v:1, k:carro, mode:FULL, rate:70, size:63
@@ -32,3 +33,33 @@
 2025-10-02 23:29:59, EXEC, v:1, k:carro, mode:FULL, rate:90, size:66
 2025-10-02 23:30:24, EXEC, v:1, k:carro, mode:FULL, rate:100, size:66
 2025-10-02 23:35:34, MOVE, v:1, k:carro, mode:BACK
+=======
+2025-10-02 11:49:20, MOVE, v:1, k:carro, mode:PICK
+2025-10-02 11:49:22, EXEC, v:1, k:carro, mode:FULL, rate:50
+2025-10-02 11:59:09, EXEC, v:1, k:carro, mode:FULL, rate:50, size:51
+2025-10-02 11:59:54, EXEC, v:1, k:carro, mode:FULL, rate:50
+2025-10-02 12:01:34, EXEC, v:1, k:carro, mode:FULL, rate:50, size:51
+2025-10-02 12:05:06, EXEC, v:1, k:carro, mode:FULL, rate:50, size:51
+2025-10-02 12:07:40, EXEC, v:1, k:carro, mode:FULL, rate:50, size:51
+2025-10-02 12:11:26, EXEC, v:1, k:carro, mode:FULL, rate:50, size:51
+2025-10-02 12:12:43, EXEC, v:1, k:carro, mode:FULL, rate:0, size:51
+2025-10-02 12:13:22, EXEC, v:1, k:carro, mode:FULL, rate:50, size:51
+2025-10-02 12:14:40, EXEC, v:1, k:carro, mode:FULL, rate:50, size:51
+2025-10-02 12:15:17, EXEC, v:1, k:carro, mode:FULL, rate:0, size:51
+2025-10-02 12:16:07, EXEC, v:1, k:carro, mode:FULL, rate:50, size:51
+2025-10-02 12:17:19, EXEC, v:1, k:carro, mode:FULL, rate:10, size:50
+2025-10-02 12:18:45, EXEC, v:1, k:carro, mode:FULL, rate:50, size:50
+2025-10-02 12:19:06, EXEC, v:1, k:carro, mode:FULL, rate:0, size:50
+2025-10-02 12:20:43, EXEC, v:1, k:carro, mode:FULL, rate:0, size:50
+2025-10-02 12:21:02, EXEC, v:1, k:carro, mode:FULL, rate:50, size:50
+2025-10-02 12:24:18, MOVE, v:1, k:carro, mode:PICK
+2025-10-02 12:24:21, EXEC, v:1, k:carro, mode:FULL, rate:50, size:50
+2025-10-02 12:24:55, MOVE, v:1, k:carro, mode:PICK
+2025-10-02 12:24:56, EXEC, v:1, k:carro, mode:FULL, rate:50
+2025-10-02 12:28:08, EXEC, v:1, k:carro, mode:FULL, rate:50, size:50
+2025-10-02 12:28:52, EXEC, v:1, k:carro, mode:FULL, rate:50, size:50
+2025-10-02 12:31:37, EXEC, v:1, k:carro, mode:FULL, rate:50, size:50
+2025-10-02 12:33:30, EXEC, v:1, k:carro, mode:FULL, rate:50, size:50
+2025-10-02 12:34:36, EXEC, v:1, k:carro, mode:FULL, rate:60, size:50
+2025-10-02 19:37:58, MOVE, v:1, k:carro, mode:PICK
+>>>>>>> 58fd69a (Pontuações concluídas)

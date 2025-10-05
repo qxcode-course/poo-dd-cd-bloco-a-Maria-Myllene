@@ -4,10 +4,10 @@ class Carro:
         self.gas: int = gas
         self.km: int = 0
         self.gasMax: int = 100
-    
+
     def __str__ (self):
         return f"pass: {self.passager}, gas: {self.gas}, km: {self.km}"
-    
+
     def enter (self):
         self.passager += 1
         if self.passager > 2:
@@ -62,5 +62,5 @@ def main ():
             carro.drive(distance)
         else:
             print("fail: comando invalido")
- 
-main()
+    
+    main()

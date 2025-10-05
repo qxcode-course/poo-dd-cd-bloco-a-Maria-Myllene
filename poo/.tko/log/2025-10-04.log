@@ -1,0 +1,6 @@
+2025-10-04 22:37:23, SELF, v:1, k:carro, human:sim, other:sim, alone:4, study:200
+2025-10-04 22:37:36, MOVE, v:1, k:carro, mode:PICK
+2025-10-04 22:37:39, EXEC, v:1, k:carro, mode:FULL, rate:100, size:66
+2025-10-04 22:37:42, MOVE, v:1, k:carro, mode:BACK
+2025-10-04 22:37:45, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-04 22:37:47, MOVE, v:1, k:calculadora, mode:BACK
