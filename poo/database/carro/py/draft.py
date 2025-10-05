@@ -5,6 +5,7 @@ class Carro:
         self.km: int = 0
         self.gasMax: int = 100
 
+
     def __str__ (self):
         return f"pass: {self.passager}, gas: {self.gas}, km: {self.km}"
 
@@ -19,13 +20,12 @@ class Carro:
         if self.passager < 0:
             print("fail: nao ha ninguem no carro")
             self.passager = 0
-    
+   
     def fuel (self, increment: int):
         if increment > self.gasMax:
             self.gas = self.gasMax
         else:
             self.gas += increment
-     
     def drive (self, distance: int):
         if self.passager == 0:
             print("fail: nao ha ninguem no carro")
@@ -39,6 +39,7 @@ class Carro:
             self.km += distance
             self.gas = self.gas - self.km
 
+    
 def main ():
     carro: Carro = Carro(0, 0, 0)
     while True:
@@ -60,7 +61,9 @@ def main ():
         elif args [0] == "drive":
             distance: int = int(args[1])
             carro.drive(distance)
+
         else:
             print("fail: comando invalido")
-    
-    main()
+   
+main()
+

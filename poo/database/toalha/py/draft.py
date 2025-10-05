@@ -1,8 +1,23 @@
-class Towel: 
-    def __init__ (self, color: str, size: str): #construtor
+class Towel:
+    def __init__ (self, color: str, size: str):
         self.color = color  
         self.size = size
         self.wetness = 0
+    
+    def __str__ (self):
+        return f"Cor: {self.color}, Tamanho: {self.size}, Umidade: {self.wetness}"
+    
+    def isDry (self):
+        if self.wetness == 0:
+            print("sim")
+        else:
+            print("nao")
+
+    def dry (self, amount: int) -> None:
+        self.wetness += amount
+        if self.wetness >= self.getMaxWetness():
+            print("toalha encharcada")
+            self.wetness = self.getMaxWetness()
 
     def getMaxWetness (self) -> int:
         if self.size == "P":
@@ -12,47 +27,34 @@ class Towel:
         if self.size == "G":
             return 30
         return 0
-
-    def dry (self, amount: int) -> None:
-        self.wetness += amount
-        if self.wetness >= self.getMaxWetness():
-            print("toalha encharcada")
-            self.wetness = self.getMaxWetness()
-        
-    def __str__ (self): #toString
-        return f"Cor: {self.color}, Tamanho: {self.size}, Umidade: {self.wetness}"
-    
-    def isDry (self) -> bool:
-        return self.wetness == 0
     
     def wringOut (self) -> None:
         self.wetness = 0
 
-def main (): 
-    toalha: Towel = Towel ("", "") 
+def main():
+    toalha: Towel = Towel("", "")
+
     while True:
-        line: str = input() #5. entrada de linha
-        args: list[str] = line.split(" ") #6. lista de palavras 
+        line = input()
+        args: list[str] = line.split(" ")
         print("$" + line)
-        if args[0] == "end":
+
+        if args [0] == "end":
             break
-        elif args[0] == "criar":
+        elif args [0] == "criar":
             color = args[1]
             size = args[2]
             toalha = Towel(color, size)
-        elif args[0] == "mostrar":
+        elif args [0] == "mostrar":
             print(toalha)
-        elif args[0] == "enxugar":
+        elif args [0] == "seca":
+            toalha.isDry()
+        elif args [0] == "enxugar":
             amount: int = int(args[1])
             toalha.dry(amount)
-        elif args[0] == "seca":
-            if toalha.isDry():
-                print ("sim")
-            else:
-                print("nao")
         elif args[0] == "torcer":
             toalha.wringOut()
-        else:
-            print ("fail: comando inválido")
+        else: 
+            print("fail: comando invalido")
 
-main() 
+main()
