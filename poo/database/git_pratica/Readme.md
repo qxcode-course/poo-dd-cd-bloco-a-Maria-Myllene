@@ -14,7 +14,7 @@ Faça um relatório de um parágrafo explicando o que foi feito, o que foi apren
 - Criar um arquivo `code nome-do-arquivo.extensão`
 - Adicione conteúdo ao arquivo e salvar
   - Coloque o vscode para salvar automaticamente na opção auto save
-  - Control , e escolher auto save (after delay)
+  - Control , e escolher auto save (after delay)  
 
 ## Primeiro fluxo de trabalho (1 ponto)
 
